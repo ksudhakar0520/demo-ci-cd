@@ -31,8 +31,21 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				<cloudHubDeployment>
+    <uri>https://anypoint.mulesoft.com</uri>
+    <muleVersion>4.3.0-20201013</muleVersion>
+    <!-- Deploy User Parameter -->
+    <username>sgkotha99</username>
+    <password>N#ist#m123</password>
+    <!-- Environment Parameter -->
+    <environment>Sandbox</environment>
+    <applicationName>demo-ci-cd</applicationName>
+   
+    <workerType>Micro</workerType>
+</cloudHubDeployment>
 				</configuration>
 			</plugin>
+			
 		</plugins>
 	</build>
 
